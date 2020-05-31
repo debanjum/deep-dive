@@ -24,6 +24,11 @@
     "activeTab",
     "contextMenus",
     "clipboardWrite"
-  ]
-
+  ],
+  
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{19e990bf-5a80-44da-8d6e-aa251b8ba9fc}"
+    }
+  }
 }
