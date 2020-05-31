@@ -1,4 +1,4 @@
-<img align="right" width="75" height="75" src="./icons/deep-dive-96.png">
+<img align="right" width="75" height="75" src="./src/icons/deep-dive-96.png">
 
 # Deep Dive
 

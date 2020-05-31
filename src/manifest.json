@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Deep Dive",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "Deep link to any text on the web.",
 
   "icons": {
