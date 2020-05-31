@@ -14,5 +14,16 @@
       "matches": ["<all_urls>"],
       "js": ["dive.js"]
     }
+  ],
+
+  "background": {
+    "scripts": ["link.js"]
+  },
+
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "clipboardWrite"
   ]
+
 }
