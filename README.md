@@ -2,6 +2,8 @@
 
 # Deep Dive
 
+<a href="https://github.com/debanjum/deep-dive/actions"><img src="https://github.com/debanjum/deep-dive/workflows/Build/badge.svg"></a>
+
 A web extension to deep link to any text on the web
 
 ## Usage
