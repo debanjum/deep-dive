@@ -4,7 +4,10 @@
 
 <a href="https://github.com/debanjum/deep-dive/actions"><img src="https://github.com/debanjum/deep-dive/workflows/Build/badge.svg"></a>
 
-A web extension to deep link to any text on the web
+A web extension to deep link to any text on the web.
+
+## Install
+- [Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/deep-dive/)
 
 ## Usage
 
