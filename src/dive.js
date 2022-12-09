@@ -24,6 +24,9 @@ if (window.location.hash.includes(delimiter))
       .slice(-1)[0];
 
   // Find, Scroll to and Highlight the target text on page
+  if (!!scrollToTextPrefix)
+      // Dive to text prefix which is used as search start context
+      window.find(decodeURIComponent(scrollToTextPrefix));
   // Now dive to and highlight text start
   window.find(decodeURIComponent(scrollToTextStart));
 }
