@@ -1,10 +1,10 @@
 <img align="right" width="75" height="75" src="./src/icons/deep-dive-96.png">
 
 # Deep Dive
+[![build](https://github.com/debanjum/deep-dive/actions/workflows/build.yml/badge.svg)](https://github.com/debanjum/deep-dive/actions/workflows/build.yml)
+[![release](https://github.com/debanjum/deep-dive/actions/workflows/release.yml/badge.svg)](https://github.com/debanjum/deep-dive/actions/workflows/release.yml)
 
-<a href="https://github.com/debanjum/deep-dive/actions"><img src="https://github.com/debanjum/deep-dive/workflows/Build/badge.svg"></a>
-
-A web extension to deep link to any text on the web.
+*A web extension to deep link to any text on the web.*
 
 ## Install
 - [Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/deep-dive/)
