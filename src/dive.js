@@ -1,11 +1,14 @@
-// Dive text from URL in ScrollToTextFragment Format
-// Refer https://github.com/WICG/ScrollToTextFragment#tldr
+// Dive to text specified in URL in ScrollToText Fragment Format
+// ScrollToText Fragment Format => :~:text=[prefix-,]textStart[,textEnd][,-suffix]
+// Refer https://github.com/WICG/ScrollToTextFragment#tldr for more details
+// -----------------------------------------------------------------------------
 const delimiter = ":~:text=";
 
 // If visiting in a deep link URL
 if (window.location.hash.includes(delimiter))
 {
   // Extract text to dive to from URL
+  // --------------------------------
   var scrollToText = window.location.hash.split(delimiter)[1];
 
   // Split into prefix, textStart, textEnd, suffix
@@ -24,6 +27,7 @@ if (window.location.hash.includes(delimiter))
       .slice(-1)[0];
 
   // Find, Scroll to and Highlight the target text on page
+  // ----------------------------------------------------
   if (!!scrollToTextPrefix)
       // Dive to text prefix which is used as search start context
       window.find(decodeURIComponent(scrollToTextPrefix));
