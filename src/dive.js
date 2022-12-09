@@ -6,9 +6,24 @@ const delimiter = ":~:text=";
 if (window.location.hash.includes(delimiter))
 {
   // Extract text to dive to from URL
-  var dive_to_text = decodeURIComponent(window.location.hash
-                                        .split(delimiter)[1]);
+  var scrollToText = window.location.hash.split(delimiter)[1];
 
-  // Find, scroll to and highlight the text on page
-  window.find(dive_to_text);
+  // Split into prefix, textStart, textEnd, suffix
+  if (scrollToText.split("-,").length > 1)
+    var scrollToTextPrefix = scrollToText.split("-,")[0];
+  if (scrollToText.split(",-").length > 1)
+    var scrollToTextSuffix = scrollToText.split(",-")[1];
+
+  var scrollToTextStart = scrollToText
+      .split("-,")
+      .slice(-1)[0]
+      .split(",")[0];
+  var scrollToTextEnd = scrollToText
+      .split(",-")[0]
+      .split(",")
+      .slice(-1)[0];
+
+  // Find, Scroll to and Highlight the target text on page
+  // Now dive to and highlight text start
+  window.find(decodeURIComponent(scrollToTextStart));
 }
