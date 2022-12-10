@@ -9,7 +9,7 @@ on:
         type: choice
         description: 'Channel Type'
         required: true
-        default: 'unlisted'
+        default: 'listed'
         options:
         - listed
         - unlisted
@@ -35,6 +35,6 @@ jobs:
         with:
           cmd: sign
           source: ${{ steps.web-ext-build.outputs.target }}
-          channel: ${{ inputs.channel || 'unlisted' }}
+          channel: ${{ inputs.channel || 'listed' }}
           apiKey: ${{ secrets.AMO_SIGN_KEY }}
           apiSecret: ${{ secrets.AMO_SIGN_SECRET }}
